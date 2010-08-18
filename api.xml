@@ -229,6 +229,9 @@
         <param name="LinodeID" type="integer" required="true" />
         <param name="IpAdressID" type="integer" required="false" />        
     </method>
+    <method name="linode.ip.addprivate">
+        <param name="LinodeID" type="integer" required="true" />      
+    </method>    
     
     <!-- User -->
     <method name="user.getapikey">
