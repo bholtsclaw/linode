@@ -267,8 +267,10 @@ class Services_Linode
      */    
     protected function decodeBody($body) 
     {
-        if($responseFormat = 'json') {
+        if($this->responseFormat = 'json') {
             $decoded_body = json_decode($body, TRUE);
+        } else {
+            $decoded_body = $body;
         }
         
         return $decoded_body;
