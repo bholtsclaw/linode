@@ -5,7 +5,7 @@
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>Services_Linode</name>
  <channel>pear.keremdurmus.com</channel>
- <summary>Linode PHP API</summary>
+ <summary>PHP wrapper for Linode API</summary>
  <description>PHP wrapper for Linode API to manage linode(s) and domain(s).</description>
  <lead>
   <name>Kerem Durmus</name>
@@ -13,8 +13,8 @@
   <email>kerem@keremdurmus.com</email>
   <active>yes</active>
  </lead>
- <date>2010-06-16</date>
- <time>21:45:24</time>
+ <date>2010-11-16</date>
+ <time>14:47:56</time>
  <version>
   <release>1.0.3</release>
   <api>1.0.3</api>
@@ -23,7 +23,7 @@
   <release>stable</release>
   <api>stable</api>
  </stability>
- <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
 -
  </notes>
@@ -35,7 +35,10 @@
      <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
     </file>
    </dir> <!-- //Linode -->
-   <file name="api.xml" role="data" />
+   <file name="api.xml" role="data">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+    <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
+   </file>
    <file name="Linode.php" role="php">
     <tasks:replace from="@package_version@" to="version" type="package-info" />
     <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
@@ -78,8 +81,8 @@
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2010-06-16</date>
-   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+   <date>2010-11-16</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 -
    </notes>
