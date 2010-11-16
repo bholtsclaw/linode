@@ -132,7 +132,7 @@ class Services_Linode
             throw new Services_Linode_Exception('You must set your api key');
         }
         $this->apiKey = $apiKey;
-        $this->batching  = $batching;
+        $this->batching = $batching;
         $this->loadAPI();
     }
     
@@ -238,9 +238,9 @@ class Services_Linode
     protected function sendRequest($method, $params = null)
     {
     
-        $this->setParam('api_key',$this->apiKey);
+        $this->setParam('api_key', $this->apiKey);
         $this->setParam('api_responseFormat', $this->responseFormat);
-        $this->setParam('api_action',$method);
+        $this->setParam('api_action', $method);
 
         if($this->batching == false) {
             foreach($params as $param => $value) {
@@ -319,9 +319,7 @@ class Services_Linode
             }
             
             $params[$name] = $arg;
-            
         }
-        
         return array($path,$params);
     }
     
@@ -374,5 +372,4 @@ class Services_Linode
             $this->api[$method_name] =  $method;
         }
     }
-  
 }
