@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <linode>
-    <!-- Avail -->
+    <!-- Utility -->
     <method name="avail.datacenters"></method>
     <method name="avail.kernels"></method>
     <method name="avail.linodeplans"></method>
@@ -81,7 +81,22 @@
         <param name="LinodeID" type="integer" required="true" />        
     </method>
     <method name="linode.update">
-        <param name="LinodeID" type="integer" required="false" />        
+        <param name="LinodeID" type="integer" required="false" />
+        <param name="Label" type="string" required="false" />
+        <param name="lpm_displayGroup" type="string" required="false" />
+        <param name="Alert_cpu_enabled" type="boolean" required="false" />
+        <param name="Alert_cpu_threshold" type="integer" required="false" />
+        <param name="Alert_diskio_enabled" type="boolean" required="false" />
+        <param name="Alert_diskio_threshold" type="integer" required="false" />
+        <param name="Alert_bwin_enabled" type="boolean" required="false" />  
+        <param name="Alert_bwin_threshold" type="integer" required="false" />
+        <param name="Alert_bwout_enabled" type="boolean" required="false" />
+        <param name="Alert_bwout_threshold" type="integer" required="false" />
+        <param name="Alert_bwquota_enabled" type="boolean" required="false" />
+        <param name="Alert_bwquota_threshold" type="integer" required="false" />
+        <param name="backupWindow" type="integer" required="false" />
+        <param name="backupWeeklyDay" type="integer" required="false" />
+        <param name="watchdog" type="boolean" required="false" />
     </method>
     <method name="linode.boot">
         <param name="LinodeID" type="integer" required="true" />        
@@ -245,5 +260,6 @@
         <param name="JobID" type="integer" required="false" />
         <param name="pendingOnly" type="boolean" required="false" />        
     </method>    
-
+    <!-- NodeBalancer -->
+    <!-- Beta -->
 </linode>
