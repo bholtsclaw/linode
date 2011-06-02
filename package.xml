@@ -13,11 +13,11 @@
   <email>kerem@keremdurmus.com</email>
   <active>yes</active>
  </lead>
- <date>2010-11-16</date>
- <time>14:47:56</time>
+ <date>2011-06-03</date>
+ <time>01:02:00</time>
  <version>
-  <release>1.0.3</release>
-  <api>1.0.3</api>
+  <release>1.0.4</release>
+  <api>1.0.4</api>
  </version>
  <stability>
   <release>stable</release>
@@ -81,7 +81,7 @@
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2010-11-16</date>
+   <date>2011-06-03</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 -
